@@ -101,12 +101,12 @@ class DetailedProgressPlugin(octoprint.plugin.EventHandlerPlugin,
 		return dict(
 			messages = [
 				"{completion:.2f}p  complete",
-				"ETL {printTimeLeft}",
-				"ETA {ETA}"
+				"ETL {printTimeLeft}"#,
+				#"ETA {ETA}"
 			],
 			eta_strftime = "%H %M %S Day %d",
 			etl_format = "{hours:02d}h{minutes:02d}m{seconds:02d}s",
-			time_to_change = 10
+			time_to_change = 5
 		)
 
 	##~~ Softwareupdate hook
